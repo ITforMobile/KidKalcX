@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF2AE16D18D6778F00995103 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2AE16C18D6778F00995103 /* Foundation.framework */; };
+		BF2AE16F18D6778F00995103 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2AE16E18D6778F00995103 /* CoreGraphics.framework */; };
+		BF2AE17118D6778F00995103 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2AE17018D6778F00995103 /* UIKit.framework */; };
+		BF2AE17718D6778F00995103 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE17518D6778F00995103 /* InfoPlist.strings */; };
+		BF2AE17918D6778F00995103 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2AE17818D6778F00995103 /* main.m */; };
+		BF2AE17D18D6778F00995103 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2AE17C18D6778F00995103 /* AppDelegate.m */; };
+		BF2AE18018D6778F00995103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE17E18D6778F00995103 /* Main.storyboard */; };
+		BF2AE18318D6778F00995103 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2AE18218D6778F00995103 /* MainViewController.m */; };
+		BF2AE18618D6778F00995103 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2AE18518D6778F00995103 /* FlipsideViewController.m */; };
+		BF2AE18818D6778F00995103 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE18718D6778F00995103 /* Images.xcassets */; };
+		BF2AE18F18D6778F00995103 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2AE18E18D6778F00995103 /* XCTest.framework */; };
+		BF2AE19018D6778F00995103 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2AE16C18D6778F00995103 /* Foundation.framework */; };
+		BF2AE19118D6778F00995103 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2AE17018D6778F00995103 /* UIKit.framework */; };
+		BF2AE19918D6778F00995103 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE19718D6778F00995103 /* InfoPlist.strings */; };
+		BF2AE19B18D6778F00995103 /* KidKalcPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2AE19A18D6778F00995103 /* KidKalcPlusTests.m */; };
+		BF2AE1BA18D677EF00995103 /* cornernav2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1A418D677EF00995103 /* cornernav2.png */; };
+		BF2AE1BB18D677EF00995103 /* divide_key.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1A518D677EF00995103 /* divide_key.png */; };
+		BF2AE1BC18D677EF00995103 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1A618D677EF00995103 /* iTunesArtwork.png */; };
+		BF2AE1BD18D677EF00995103 /* kalvin.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1A718D677EF00995103 /* kalvin.png */; };
+		BF2AE1BE18D677EF00995103 /* keri.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1A818D677EF00995103 /* keri.png */; };
+		BF2AE1BF18D677EF00995103 /* kidakalc_logo_info.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1A918D677EF00995103 /* kidakalc_logo_info.png */; };
+		BF2AE1C018D677EF00995103 /* kidakalc_logo_white.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1AA18D677EF00995103 /* kidakalc_logo_white.png */; };
+		BF2AE1C118D677EF00995103 /* KidKalc_mainmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1AB18D677EF00995103 /* KidKalc_mainmenu.png */; };
+		BF2AE1C218D677EF00995103 /* KidKalc_marketingmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1AC18D677EF00995103 /* KidKalc_marketingmenu.png */; };
+		BF2AE1C318D677EF00995103 /* kidkalc.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1AD18D677EF00995103 /* kidkalc.png */; };
+		BF2AE1C418D677EF00995103 /* kidtopper.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1AE18D677EF00995103 /* kidtopper.png */; };
+		BF2AE1C518D677EF00995103 /* letsdo1.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1AF18D677EF00995103 /* letsdo1.png */; };
+		BF2AE1C618D677EF00995103 /* letsdo2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1B018D677EF00995103 /* letsdo2.png */; };
+		BF2AE1C718D677EF00995103 /* lines.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1B118D677EF00995103 /* lines.png */; };
+		BF2AE1C818D677EF00995103 /* lovetimes.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1B218D677EF00995103 /* lovetimes.png */; };
+		BF2AE1C918D677EF00995103 /* minus_key.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1B318D677EF00995103 /* minus_key.png */; };
+		BF2AE1CA18D677EF00995103 /* newbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1B418D677EF00995103 /* newbutton.png */; };
+		BF2AE1CB18D677EF00995103 /* plus_key.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1B518D677EF00995103 /* plus_key.png */; };
+		BF2AE1CC18D677EF00995103 /* school.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1B618D677EF00995103 /* school.png */; };
+		BF2AE1CD18D677EF00995103 /* times_key.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1B718D677EF00995103 /* times_key.png */; };
+		BF2AE1CE18D677EF00995103 /* x_2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1B818D677EF00995103 /* x_2.png */; };
+		BF2AE1CF18D677EF00995103 /* X.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1B918D677EF00995103 /* X.png */; };
+		BF2AE1D518D678AC00995103 /* TimesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2AE1D418D678AC00995103 /* TimesViewController.m */; };
+		BF2AE1D818D67A0600995103 /* divide2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1D618D67A0600995103 /* divide2.png */; };
+		BF2AE1D918D67A0600995103 /* divide.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1D718D67A0600995103 /* divide.png */; };
+		BF2AE1DC18D67A2400995103 /* Plus2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1DA18D67A2400995103 /* Plus2.png */; };
+		BF2AE1DD18D67A2400995103 /* Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2AE1DB18D67A2400995103 /* Plus.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF2AE19218D6778F00995103 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF2AE16118D6778F00995103 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2AE16818D6778F00995103;
+			remoteInfo = KidKalcPlus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF2AE16918D6778F00995103 /* KidKalcPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidKalcPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2AE16C18D6778F00995103 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF2AE16E18D6778F00995103 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BF2AE17018D6778F00995103 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BF2AE17418D6778F00995103 /* KidKalcPlus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KidKalcPlus-Info.plist"; sourceTree = "<group>"; };
+		BF2AE17618D6778F00995103 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF2AE17818D6778F00995103 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF2AE17A18D6778F00995103 /* KidKalcPlus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KidKalcPlus-Prefix.pch"; sourceTree = "<group>"; };
+		BF2AE17B18D6778F00995103 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF2AE17C18D6778F00995103 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF2AE17F18D6778F00995103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF2AE18118D6778F00995103 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BF2AE18218D6778F00995103 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BF2AE18418D6778F00995103 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		BF2AE18518D6778F00995103 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		BF2AE18718D6778F00995103 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF2AE18D18D6778F00995103 /* KidKalcPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidKalcPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2AE18E18D6778F00995103 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BF2AE19618D6778F00995103 /* KidKalcPlusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KidKalcPlusTests-Info.plist"; sourceTree = "<group>"; };
+		BF2AE19818D6778F00995103 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF2AE19A18D6778F00995103 /* KidKalcPlusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KidKalcPlusTests.m; sourceTree = "<group>"; };
+		BF2AE1A418D677EF00995103 /* cornernav2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cornernav2.png; sourceTree = "<group>"; };
+		BF2AE1A518D677EF00995103 /* divide_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = divide_key.png; sourceTree = "<group>"; };
+		BF2AE1A618D677EF00995103 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		BF2AE1A718D677EF00995103 /* kalvin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kalvin.png; sourceTree = "<group>"; };
+		BF2AE1A818D677EF00995103 /* keri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keri.png; sourceTree = "<group>"; };
+		BF2AE1A918D677EF00995103 /* kidakalc_logo_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kidakalc_logo_info.png; sourceTree = "<group>"; };
+		BF2AE1AA18D677EF00995103 /* kidakalc_logo_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kidakalc_logo_white.png; sourceTree = "<group>"; };
+		BF2AE1AB18D677EF00995103 /* KidKalc_mainmenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KidKalc_mainmenu.png; sourceTree = "<group>"; };
+		BF2AE1AC18D677EF00995103 /* KidKalc_marketingmenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KidKalc_marketingmenu.png; sourceTree = "<group>"; };
+		BF2AE1AD18D677EF00995103 /* kidkalc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kidkalc.png; sourceTree = "<group>"; };
+		BF2AE1AE18D677EF00995103 /* kidtopper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kidtopper.png; sourceTree = "<group>"; };
+		BF2AE1AF18D677EF00995103 /* letsdo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letsdo1.png; sourceTree = "<group>"; };
+		BF2AE1B018D677EF00995103 /* letsdo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = letsdo2.png; sourceTree = "<group>"; };
+		BF2AE1B118D677EF00995103 /* lines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lines.png; sourceTree = "<group>"; };
+		BF2AE1B218D677EF00995103 /* lovetimes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lovetimes.png; sourceTree = "<group>"; };
+		BF2AE1B318D677EF00995103 /* minus_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus_key.png; sourceTree = "<group>"; };
+		BF2AE1B418D677EF00995103 /* newbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newbutton.png; sourceTree = "<group>"; };
+		BF2AE1B518D677EF00995103 /* plus_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_key.png; sourceTree = "<group>"; };
+		BF2AE1B618D677EF00995103 /* school.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school.png; sourceTree = "<group>"; };
+		BF2AE1B718D677EF00995103 /* times_key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = times_key.png; sourceTree = "<group>"; };
+		BF2AE1B818D677EF00995103 /* x_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x_2.png; sourceTree = "<group>"; };
+		BF2AE1B918D677EF00995103 /* X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X.png; sourceTree = "<group>"; };
+		BF2AE1D318D678AC00995103 /* TimesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimesViewController.h; sourceTree = "<group>"; };
+		BF2AE1D418D678AC00995103 /* TimesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimesViewController.m; sourceTree = "<group>"; };
+		BF2AE1D618D67A0600995103 /* divide2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = divide2.png; sourceTree = "<group>"; };
+		BF2AE1D718D67A0600995103 /* divide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = divide.png; sourceTree = "<group>"; };
+		BF2AE1DA18D67A2400995103 /* Plus2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plus2.png; sourceTree = "<group>"; };
+		BF2AE1DB18D67A2400995103 /* Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plus.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF2AE16618D6778F00995103 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2AE16F18D6778F00995103 /* CoreGraphics.framework in Frameworks */,
+				BF2AE17118D6778F00995103 /* UIKit.framework in Frameworks */,
+				BF2AE16D18D6778F00995103 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2AE18A18D6778F00995103 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2AE18F18D6778F00995103 /* XCTest.framework in Frameworks */,
+				BF2AE19118D6778F00995103 /* UIKit.framework in Frameworks */,
+				BF2AE19018D6778F00995103 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF2AE16018D6778F00995103 = {
+			isa = PBXGroup;
+			children = (
+				BF2AE17218D6778F00995103 /* KidKalcPlus */,
+				BF2AE19418D6778F00995103 /* KidKalcPlusTests */,
+				BF2AE16B18D6778F00995103 /* Frameworks */,
+				BF2AE16A18D6778F00995103 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF2AE16A18D6778F00995103 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF2AE16918D6778F00995103 /* KidKalcPlus.app */,
+				BF2AE18D18D6778F00995103 /* KidKalcPlusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF2AE16B18D6778F00995103 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF2AE16C18D6778F00995103 /* Foundation.framework */,
+				BF2AE16E18D6778F00995103 /* CoreGraphics.framework */,
+				BF2AE17018D6778F00995103 /* UIKit.framework */,
+				BF2AE18E18D6778F00995103 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF2AE17218D6778F00995103 /* KidKalcPlus */ = {
+			isa = PBXGroup;
+			children = (
+				BF2AE1DA18D67A2400995103 /* Plus2.png */,
+				BF2AE1DB18D67A2400995103 /* Plus.png */,
+				BF2AE1D618D67A0600995103 /* divide2.png */,
+				BF2AE1D718D67A0600995103 /* divide.png */,
+				BF2AE1A418D677EF00995103 /* cornernav2.png */,
+				BF2AE1A518D677EF00995103 /* divide_key.png */,
+				BF2AE1A618D677EF00995103 /* iTunesArtwork.png */,
+				BF2AE1A718D677EF00995103 /* kalvin.png */,
+				BF2AE1A818D677EF00995103 /* keri.png */,
+				BF2AE1A918D677EF00995103 /* kidakalc_logo_info.png */,
+				BF2AE1AA18D677EF00995103 /* kidakalc_logo_white.png */,
+				BF2AE1AB18D677EF00995103 /* KidKalc_mainmenu.png */,
+				BF2AE1AC18D677EF00995103 /* KidKalc_marketingmenu.png */,
+				BF2AE1AD18D677EF00995103 /* kidkalc.png */,
+				BF2AE1AE18D677EF00995103 /* kidtopper.png */,
+				BF2AE1AF18D677EF00995103 /* letsdo1.png */,
+				BF2AE1B018D677EF00995103 /* letsdo2.png */,
+				BF2AE1B118D677EF00995103 /* lines.png */,
+				BF2AE1B218D677EF00995103 /* lovetimes.png */,
+				BF2AE1B318D677EF00995103 /* minus_key.png */,
+				BF2AE1B418D677EF00995103 /* newbutton.png */,
+				BF2AE1B518D677EF00995103 /* plus_key.png */,
+				BF2AE1B618D677EF00995103 /* school.png */,
+				BF2AE1B718D677EF00995103 /* times_key.png */,
+				BF2AE1B818D677EF00995103 /* x_2.png */,
+				BF2AE1B918D677EF00995103 /* X.png */,
+				BF2AE1D318D678AC00995103 /* TimesViewController.h */,
+				BF2AE1D418D678AC00995103 /* TimesViewController.m */,
+				BF2AE17B18D6778F00995103 /* AppDelegate.h */,
+				BF2AE17C18D6778F00995103 /* AppDelegate.m */,
+				BF2AE17E18D6778F00995103 /* Main.storyboard */,
+				BF2AE18118D6778F00995103 /* MainViewController.h */,
+				BF2AE18218D6778F00995103 /* MainViewController.m */,
+				BF2AE18418D6778F00995103 /* FlipsideViewController.h */,
+				BF2AE18518D6778F00995103 /* FlipsideViewController.m */,
+				BF2AE18718D6778F00995103 /* Images.xcassets */,
+				BF2AE17318D6778F00995103 /* Supporting Files */,
+			);
+			path = KidKalcPlus;
+			sourceTree = "<group>";
+		};
+		BF2AE17318D6778F00995103 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF2AE17418D6778F00995103 /* KidKalcPlus-Info.plist */,
+				BF2AE17518D6778F00995103 /* InfoPlist.strings */,
+				BF2AE17818D6778F00995103 /* main.m */,
+				BF2AE17A18D6778F00995103 /* KidKalcPlus-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF2AE19418D6778F00995103 /* KidKalcPlusTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF2AE19A18D6778F00995103 /* KidKalcPlusTests.m */,
+				BF2AE19518D6778F00995103 /* Supporting Files */,
+			);
+			path = KidKalcPlusTests;
+			sourceTree = "<group>";
+		};
+		BF2AE19518D6778F00995103 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF2AE19618D6778F00995103 /* KidKalcPlusTests-Info.plist */,
+				BF2AE19718D6778F00995103 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF2AE16818D6778F00995103 /* KidKalcPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF2AE19E18D6778F00995103 /* Build configuration list for PBXNativeTarget "KidKalcPlus" */;
+			buildPhases = (
+				BF2AE16518D6778F00995103 /* Sources */,
+				BF2AE16618D6778F00995103 /* Frameworks */,
+				BF2AE16718D6778F00995103 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KidKalcPlus;
+			productName = KidKalcPlus;
+			productReference = BF2AE16918D6778F00995103 /* KidKalcPlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF2AE18C18D6778F00995103 /* KidKalcPlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF2AE1A118D6779000995103 /* Build configuration list for PBXNativeTarget "KidKalcPlusTests" */;
+			buildPhases = (
+				BF2AE18918D6778F00995103 /* Sources */,
+				BF2AE18A18D6778F00995103 /* Frameworks */,
+				BF2AE18B18D6778F00995103 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF2AE19318D6778F00995103 /* PBXTargetDependency */,
+			);
+			name = KidKalcPlusTests;
+			productName = KidKalcPlusTests;
+			productReference = BF2AE18D18D6778F00995103 /* KidKalcPlusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF2AE16118D6778F00995103 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = KeithMobile;
+				TargetAttributes = {
+					BF2AE16818D6778F00995103 = {
+						DevelopmentTeam = QAJNCNA729;
+					};
+					BF2AE18C18D6778F00995103 = {
+						TestTargetID = BF2AE16818D6778F00995103;
+					};
+				};
+			};
+			buildConfigurationList = BF2AE16418D6778F00995103 /* Build configuration list for PBXProject "KidKalcPlus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF2AE16018D6778F00995103;
+			productRefGroup = BF2AE16A18D6778F00995103 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF2AE16818D6778F00995103 /* KidKalcPlus */,
+				BF2AE18C18D6778F00995103 /* KidKalcPlusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF2AE16718D6778F00995103 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2AE1C118D677EF00995103 /* KidKalc_mainmenu.png in Resources */,
+				BF2AE1C718D677EF00995103 /* lines.png in Resources */,
+				BF2AE1CA18D677EF00995103 /* newbutton.png in Resources */,
+				BF2AE1CE18D677EF00995103 /* x_2.png in Resources */,
+				BF2AE1CD18D677EF00995103 /* times_key.png in Resources */,
+				BF2AE1BC18D677EF00995103 /* iTunesArtwork.png in Resources */,
+				BF2AE18818D6778F00995103 /* Images.xcassets in Resources */,
+				BF2AE1D818D67A0600995103 /* divide2.png in Resources */,
+				BF2AE1BB18D677EF00995103 /* divide_key.png in Resources */,
+				BF2AE1BA18D677EF00995103 /* cornernav2.png in Resources */,
+				BF2AE1DD18D67A2400995103 /* Plus.png in Resources */,
+				BF2AE1C918D677EF00995103 /* minus_key.png in Resources */,
+				BF2AE1C818D677EF00995103 /* lovetimes.png in Resources */,
+				BF2AE1C318D677EF00995103 /* kidkalc.png in Resources */,
+				BF2AE1CB18D677EF00995103 /* plus_key.png in Resources */,
+				BF2AE1DC18D67A2400995103 /* Plus2.png in Resources */,
+				BF2AE1D918D67A0600995103 /* divide.png in Resources */,
+				BF2AE17718D6778F00995103 /* InfoPlist.strings in Resources */,
+				BF2AE1BF18D677EF00995103 /* kidakalc_logo_info.png in Resources */,
+				BF2AE1C518D677EF00995103 /* letsdo1.png in Resources */,
+				BF2AE1CF18D677EF00995103 /* X.png in Resources */,
+				BF2AE1C418D677EF00995103 /* kidtopper.png in Resources */,
+				BF2AE1C018D677EF00995103 /* kidakalc_logo_white.png in Resources */,
+				BF2AE1C618D677EF00995103 /* letsdo2.png in Resources */,
+				BF2AE1BD18D677EF00995103 /* kalvin.png in Resources */,
+				BF2AE1C218D677EF00995103 /* KidKalc_marketingmenu.png in Resources */,
+				BF2AE1BE18D677EF00995103 /* keri.png in Resources */,
+				BF2AE18018D6778F00995103 /* Main.storyboard in Resources */,
+				BF2AE1CC18D677EF00995103 /* school.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2AE18B18D6778F00995103 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2AE19918D6778F00995103 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF2AE16518D6778F00995103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2AE1D518D678AC00995103 /* TimesViewController.m in Sources */,
+				BF2AE17D18D6778F00995103 /* AppDelegate.m in Sources */,
+				BF2AE18318D6778F00995103 /* MainViewController.m in Sources */,
+				BF2AE18618D6778F00995103 /* FlipsideViewController.m in Sources */,
+				BF2AE17918D6778F00995103 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2AE18918D6778F00995103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2AE19B18D6778F00995103 /* KidKalcPlusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF2AE19318D6778F00995103 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2AE16818D6778F00995103 /* KidKalcPlus */;
+			targetProxy = BF2AE19218D6778F00995103 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF2AE17518D6778F00995103 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF2AE17618D6778F00995103 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BF2AE17E18D6778F00995103 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF2AE17F18D6778F00995103 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF2AE19718D6778F00995103 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF2AE19818D6778F00995103 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF2AE19C18D6778F00995103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Keith Bailly (QAJNCNA729)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "1253F00C-7FF0-4E29-ADBA-F7EA3DC73200";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		BF2AE19D18D6778F00995103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Keith Bailly (QAJNCNA729)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Keith Bailly (QAJNCNA729)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "1253F00C-7FF0-4E29-ADBA-F7EA3DC73200";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF2AE19F18D6778F00995103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Keith Bailly (QAJNCNA729)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KidKalcPlus/KidKalcPlus-Prefix.pch";
+				INFOPLIST_FILE = "KidKalcPlus/KidKalcPlus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1253F00C-7FF0-4E29-ADBA-F7EA3DC73200";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BF2AE1A018D6778F00995103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Keith Bailly (QAJNCNA729)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KidKalcPlus/KidKalcPlus-Prefix.pch";
+				INFOPLIST_FILE = "KidKalcPlus/KidKalcPlus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1253F00C-7FF0-4E29-ADBA-F7EA3DC73200";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BF2AE1A218D6779000995103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KidKalcPlus.app/KidKalcPlus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KidKalcPlus/KidKalcPlus-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KidKalcPlusTests/KidKalcPlusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BF2AE1A318D6779000995103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KidKalcPlus.app/KidKalcPlus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KidKalcPlus/KidKalcPlus-Prefix.pch";
+				INFOPLIST_FILE = "KidKalcPlusTests/KidKalcPlusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF2AE16418D6778F00995103 /* Build configuration list for PBXProject "KidKalcPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2AE19C18D6778F00995103 /* Debug */,
+				BF2AE19D18D6778F00995103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF2AE19E18D6778F00995103 /* Build configuration list for PBXNativeTarget "KidKalcPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2AE19F18D6778F00995103 /* Debug */,
+				BF2AE1A018D6778F00995103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF2AE1A118D6779000995103 /* Build configuration list for PBXNativeTarget "KidKalcPlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2AE1A218D6779000995103 /* Debug */,
+				BF2AE1A318D6779000995103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF2AE16118D6778F00995103 /* Project object */;
+}

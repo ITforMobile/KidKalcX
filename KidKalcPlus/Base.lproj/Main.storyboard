@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="aVO-UE-KGo">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="0NU-cZ-2PS">
+            <objects>
+                <viewController id="aVO-UE-KGo" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="THG-IO-ERe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qaj-yK-c03"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mX8-Ee-eGC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="KidKalc_mainmenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vu1-DN-rcV">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UED-CL-MLW">
+                                <rect key="frame" x="401" y="370" width="104" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zAV-tN-ABe" kind="modal" modalTransitionStyle="crossDissolve" id="kui-HI-sPp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLw-xG-FML">
+                                <rect key="frame" x="520" y="368" width="366" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gl1-eD-ZJB" kind="modal" modalTransitionStyle="crossDissolve" id="77N-QU-I6G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpc-nZ-fvN">
+                                <rect key="frame" x="898" y="85" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FTa-do-hRx" kind="popover" identifier="showAlternate" popoverAnchorView="dpc-nZ-fvN" id="gtW-x7-p9g">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asY-HQ-Guj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-596" y="-89"/>
+        </scene>
+        <!--Times View Controller-->
+        <scene sceneID="Mkz-Xe-fRQ">
+            <objects>
+                <viewController id="zAV-tN-ABe" customClass="TimesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R5f-Zv-2pg"/>
+                        <viewControllerLayoutGuide type="bottom" id="fTy-Dv-PHA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bAD-yW-9fp">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="kidkalc.png" translatesAutoresizingMaskIntoConstraints="NO" id="U90-oY-ySP">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nct-HE-pdD">
+                                <rect key="frame" x="663" y="53" width="323" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="kidakalc_logo_white.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aVO-UE-KGo" kind="modal" modalTransitionStyle="crossDissolve" id="opJ-MK-krf"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="kidtopper.png" translatesAutoresizingMaskIntoConstraints="NO" id="5O1-68-lWA">
+                                <rect key="frame" x="733" y="253" width="212" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Plus.png" translatesAutoresizingMaskIntoConstraints="NO" id="agZ-NU-hgZ">
+                                <rect key="frame" x="0.0" y="-113" width="287" height="592"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXq-Ha-fcP">
+                                <rect key="frame" x="700" y="447" width="294" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="38"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="SHOW ANSWER" backgroundImage="newbutton.png">
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculate:" destination="zAV-tN-ABe" eventType="touchUpInside" id="lUk-80-ahm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="250" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V72-ta-z9s">
+                                <rect key="frame" x="8" y="-42" width="607" height="349"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="250"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="250" minValue="0.0" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="rss-z3-8jQ">
+                                <rect key="frame" x="44" y="220" width="573" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="slider:" destination="zAV-tN-ABe" eventType="valueChanged" id="NFF-Ep-sjE"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gs0-cx-TqS">
+                                <rect key="frame" x="8" y="171" width="607" height="349"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="250"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="260" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAG-tr-oPJ">
+                                <rect key="frame" x="-3" y="440" width="676" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="300"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="cornernav2.png" translatesAutoresizingMaskIntoConstraints="NO" id="aF1-YM-oYf">
+                                <rect key="frame" x="808" y="548" width="216" height="222"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="™" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zt-6p-cDX">
+                                <rect key="frame" x="924" y="76" width="17" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="times_key.png" translatesAutoresizingMaskIntoConstraints="NO" id="bSZ-6K-bAO">
+                                <rect key="frame" x="943" y="685" width="57" height="58"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="minus_key.png" translatesAutoresizingMaskIntoConstraints="NO" id="A5J-7r-yIA">
+                                <rect key="frame" x="837" y="710" width="58" height="12"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="divide_key.png" translatesAutoresizingMaskIntoConstraints="NO" id="8O8-uQ-vo4">
+                                <rect key="frame" x="942" y="577" width="58" height="72"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Plus2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ygp-J6-0Dv">
+                                <rect key="frame" x="706" y="458" width="101" height="208"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="FVJ-lI-vCV">
+                                <rect key="frame" x="55" y="440" width="562" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="slider2:" destination="zAV-tN-ABe" eventType="valueChanged" id="hdU-kQ-SYx"/>
+                                </connections>
+                            </slider>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="lines.png" translatesAutoresizingMaskIntoConstraints="NO" id="1JX-jH-opx">
+                                <rect key="frame" x="-2" y="478" width="658" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uw-Fr-xWv">
+                                <rect key="frame" x="924" y="562" width="94" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gl1-eD-ZJB" kind="modal" modalTransitionStyle="crossDissolve" id="s9D-1W-CBX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkV-KH-cys">
+                                <rect key="frame" x="824" y="664" width="92" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gl1-eD-ZJB" kind="modal" modalTransitionStyle="crossDissolve" id="tdh-Y7-tP9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="answer" destination="YAG-tr-oPJ" id="bPa-rP-X8i"/>
+                        <outlet property="bottomnumber" destination="gs0-cx-TqS" id="VL0-V6-LzI"/>
+                        <outlet property="slider" destination="rss-z3-8jQ" id="Eh1-ke-R7q"/>
+                        <outlet property="slider2" destination="FVJ-lI-vCV" id="Ny6-OM-oBL"/>
+                        <outlet property="topnumber" destination="V72-ta-z9s" id="SYJ-8c-zWX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="93M-Em-Fn4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-804" y="790"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="imE-48-Lgw">
+            <objects>
+                <viewController id="gl1-eD-ZJB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hLL-1w-4Bl"/>
+                        <viewControllerLayoutGuide type="bottom" id="7C3-7u-acK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v3L-Gi-PQg">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyr-H9-bEI">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="KidKalc_marketingmenu.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zAV-tN-ABe" kind="modal" modalTransitionStyle="crossDissolve" id="knu-Cm-69T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dx1-Kt-xRe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="790"/>
+        </scene>
+        <!--Flipside View Controller-->
+        <scene sceneID="lym-h4-kxm">
+            <objects>
+                <viewController id="FTa-do-hRx" customClass="FlipsideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xvC-rR-r8y"/>
+                        <viewControllerLayoutGuide type="bottom" id="U2r-Sf-pG5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yVM-ax-DI8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="school.png" translatesAutoresizingMaskIntoConstraints="NO" id="4st-xP-mNX">
+                                <rect key="frame" x="-174" y="-52" width="707" height="820"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="8Bx-U8-Xwy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem id="UD1-FV-3cM">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="8zt-ik-JXd">
+                                            <connections>
+                                                <action selector="done:" destination="FTa-do-hRx" id="JoJ-z8-Ud1"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="kidakalc_logo_info.png" translatesAutoresizingMaskIntoConstraints="NO" id="7rm-dY-OFR">
+                                <rect key="frame" x="26" y="45" width="261" height="87"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsX-wj-SYV">
+                                <rect key="frame" x="9" y="137" width="298" height="417"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">KidKalc™ — Learning math is fun! Learn your tables all in one app. From 1 to 1000, practicing your addition is easy. All this learning in an easy to use, slider input. Simply move the slider to the number you want on the top, and on the bottom. The calculate button will reveal the answer and disappear when you go onto the next number. Practice numerically or randomly, with slider your child can divide and practice where needed. Learning on an iPad is fun!
+ 
+KidKalc™, App is made available for your own, personal use. Consult a teacher or professional professional tutor to verify your progress. The information contained in KidKalc™ App is only offered as a guideline and Keith Mobile’s sole liability will remain the purchase price of KidKalc™ App.
+ 
+View our privacy policy at: http://www.keithmobile.com/privacy.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Bx-U8-Xwy" firstAttribute="trailing" secondItem="yVM-ax-DI8" secondAttribute="trailing" id="0V8-nh-N0D"/>
+                            <constraint firstItem="8Bx-U8-Xwy" firstAttribute="leading" secondItem="yVM-ax-DI8" secondAttribute="leading" id="Qsp-E0-TDi"/>
+                            <constraint firstItem="8Bx-U8-Xwy" firstAttribute="top" secondItem="yVM-ax-DI8" secondAttribute="top" id="z1z-qr-Bs3"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9mE-fb-xOw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540" y="-143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="KidKalc_mainmenu.png" width="1024" height="768"/>
+        <image name="KidKalc_marketingmenu.png" width="1024" height="768"/>
+        <image name="Plus.png" width="287" height="592"/>
+        <image name="Plus2.png" width="101" height="208"/>
+        <image name="cornernav2.png" width="216" height="222"/>
+        <image name="divide_key.png" width="58" height="72"/>
+        <image name="kidakalc_logo_info.png" width="261" height="87"/>
+        <image name="kidakalc_logo_white.png" width="323" height="137"/>
+        <image name="kidkalc.png" width="1024" height="768"/>
+        <image name="kidtopper.png" width="212" height="200"/>
+        <image name="lines.png" width="658" height="24"/>
+        <image name="minus_key.png" width="58" height="12"/>
+        <image name="newbutton.png" width="294" height="50"/>
+        <image name="school.png" width="707" height="820"/>
+        <image name="times_key.png" width="57" height="58"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="tdh-Y7-tP9"/>
+        <segue reference="knu-Cm-69T"/>
+    </inferredMetricsTieBreakers>
+</document>
